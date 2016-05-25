@@ -3,14 +3,21 @@
  <head>
  	<title>Learning Angular</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.min.js"></script>
     <script type="text/javascript" src="../scripts/app.js"></script>
 	<script type="text/javascript" src="../scripts/directives/menu.js"></script>
  	<script type="text/javascript" src="../scripts/controllers/menuCtrl.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="../styles/style.css" />
  </head>
  <body>
  	<div ng-app="app">
- 		<h1>Learning Angular</h1>
- 		<menu></menu>
+ 		<div class="intro">
+ 			<header>
+ 				<h1>Learning <br /> Angular</h1>
+ 				<h2>My attempt at exploring AngularJS</h2>
+ 			</header>
+	 		<menu></menu>
+		</div>
  	</div>
  </body>
 </html>
