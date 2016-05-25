@@ -1,2 +1,2 @@
 # angular-UI
-This some examples and me exploring creating a UI with angular
+This some examples and me to explore creating a UI with angular
