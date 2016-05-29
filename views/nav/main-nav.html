@@ -1,11 +1,11 @@
- 	<div  ng-controller="mainNavCtrl as mainNav" class="menu">
+ 	<nav  ng-controller="mainNavCtrl as mainNav" class="menu">
  		<div class="menuBtn" ng-click="mainNav.showMenu = !mainNav.showMenu">
- 			Menu
+ 			{{ mainNav.message }}
  		</div>
  		<div class="links" ng-show="mainNav.showMenu">
- 			<a href="#">Overview</a>
- 			<a href="#">Directives</a>
- 			<a href="#">Controllers</a>
- 			<a href="#">Services</a>
+ 			<a class="link" href="#/overview">Overview</a>
+ 			<a class="link" href="#/directives">Directives</a>
+ 			<a class="link" href="#/controllers">Controllers</a>
+ 			<a class="link" href="#/services">Services</a>
  		</div>
- 	</div>
+ 	</nav>

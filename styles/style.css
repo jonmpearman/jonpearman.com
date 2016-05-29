@@ -30,8 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	font-size: 100%;
-	background: linear-gradient(to right, #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
 }
 ol, ul {
 	list-style: none;
@@ -68,8 +66,12 @@ table {
 }
 
 /* Custom Styles */
+body {
+	font-size: 100%;
+	background: #ffffff;
+}
 
-/* Header styling */
+/* Header */
 header {
 	min-height: 200px;
 	height: 100%;
@@ -77,6 +79,11 @@ header {
 .intro {
 	min-width: 66%;
 	width: 100%;
+}
+
+.intro header {
+	background: linear-gradient(to top, #ffffff 0%, #e5ede8 50%, #e5ede8 100%);
+	background-repeat: no-repeat;
 }
 
 .intro h1{
@@ -98,10 +105,10 @@ header {
 }
 
 .intro header, .intro.menuBtn {
-	background: linear-gradient(to top, #ffffff 0%, #e0e0d1 66%, #e0e0d1 100%);
+	/*background: linear-gradient(to top, #ffffff 0%, #e0e0d1 66%, #e0e0d1 100%);*/
 }
 
-/* Main Menu styling */
+/* Main Menu */
 
 menu {
 	cursor: pointer;
@@ -111,9 +118,8 @@ menu {
 
 .menuBtn {
 	width: 50px;
-	border: 1px solid #e0e0d1;
+	border: 1px solid #e5ede8;
 	border-radius: 5px;
-	color: red;
 	text-align: center;
 	display: inline-block;
 }
@@ -128,7 +134,7 @@ menu {
 }
 
 .menu .links {
-	background: rgba(224, 224, 209, 0.25);
+	/*background: rgba(224, 224, 209, 0.25);*/
 	padding: 10px;
 	-webkit-transition:all linear 0.1s;
 	transition: all linear 0.1s;
@@ -141,4 +147,30 @@ menu {
 
 .menu.links a {
 	margin: 5px;
+}
+
+/* Main-Content */
+.main-content {
+	min-height: 500px;
+	height: 100%;
+}
+
+.content {
+	height: 200px;
+	padding: 20px;
+}
+
+.colored {
+	background-color: #e5ede8;
+}
+
+/* Footer */
+.footer {
+	min-height: 200px;
+	height: 100%;
+	margin: 20px;
+}
+
+.footer .links {
+	margin-top: 180px;
 }

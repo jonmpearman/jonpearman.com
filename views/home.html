@@ -3,10 +3,13 @@
  <head>
  	<title>Learning Angular</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-route.min.js"></script>
     <script type="text/javascript" src="../scripts/app.js"></script>
 	<script type="text/javascript" src="../scripts/directives/menu.js"></script>
+	<script type="text/javascript" src="../scripts/directives/foot.js"></script>
  	<script type="text/javascript" src="../scripts/controllers/menuCtrl.js"></script>
+ 	<script type="text/javascript" src="../scripts/controllers/footCtrl.js"></script>
  	<link rel="stylesheet" type="text/css" href="../styles/style.css" />
  </head>
  <body>
@@ -17,6 +20,11 @@
  				<h2>My attempt at exploring AngularJS</h2>
  			</header>
 	 		<menu></menu>
+		</div>
+		<div ng-view>
+		</div>
+		<div class="footer">
+			<foot></foot>
 		</div>
  	</div>
  </body>
