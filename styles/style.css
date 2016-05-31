@@ -71,6 +71,12 @@ body {
 	background: #ffffff;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Header */
 header {
 	min-height: 200px;
@@ -82,7 +88,7 @@ header {
 }
 
 .intro header {
-	background: linear-gradient(to top, #ffffff 0%, #e5ede8 50%, #e5ede8 100%);
+	background: linear-gradient(to bottom, #ffffff 0%, #e5ede8 50%, #e5ede8 100%);
 	background-repeat: no-repeat;
 }
 
@@ -94,6 +100,10 @@ header {
 	text-transform: uppercase;
 	text-align: left;
 	display: inline-block;
+}
+
+.intro h1 a {
+	color: #000000;
 }
 
 .intro h2 {
@@ -113,7 +123,9 @@ header {
 menu {
 	cursor: pointer;
 	display: block;
-	width: 66%;
+	width: 100%;
+	background: #9C9FA1;
+	background-repeat: no-repeat;
 }
 
 .menuBtn {
@@ -134,7 +146,6 @@ menu {
 }
 
 .menu .links {
-	/*background: rgba(224, 224, 209, 0.25);*/
 	padding: 10px;
 	-webkit-transition:all linear 0.1s;
 	transition: all linear 0.1s;
@@ -145,8 +156,13 @@ menu {
 	transform: scale(0.8)
 }
 
-.menu.links a {
+.link {
+	color: rgba(0,0,0,0.6);
 	margin: 5px;
+}
+
+.link:hover {
+	color: #ffffff;
 }
 
 /* Main-Content */
@@ -164,13 +180,41 @@ menu {
 	background-color: #e5ede8;
 }
 
+.right {
+	float: right;
+}
+
 /* Footer */
-.footer {
+footer {
 	min-height: 200px;
 	height: 100%;
+	background: #9C9FA1;
+	background-repeat: no-repeat;
+}
+
+foot {
 	margin: 20px;
 }
 
-.footer .links {
+footer .links {
 	margin-top: 180px;
 }
+
+.foot-content {
+	padding: 20px;
+}
+
+/* clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
