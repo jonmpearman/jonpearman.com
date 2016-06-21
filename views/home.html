@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<meta charset="utf-8" />
  	<title>Learning Angular</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-route.min.js"></script>
-    <script type="text/javascript" src="../scripts/app.js"></script>
-	<script type="text/javascript" src="../scripts/directives/menu.js"></script>
-	<script type="text/javascript" src="../scripts/directives/foot.js"></script>
- 	<script type="text/javascript" src="../scripts/controllers/menuCtrl.js"></script>
- 	<script type="text/javascript" src="../scripts/controllers/footCtrl.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css" />
  	<link rel="stylesheet" type="text/css" href="../styles/style.css" />
+ 	<link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Serif">
  </head>
  <body>
- 	<div ng-app="app">
+ 	<div ng-app="app" class="container-fluid">
  		<div class="intro">
- 			<header>
- 				<h1><a href="#/">Learning <br /> Angular</a></h1>
+ 			<header ng-controller="menuCtrl as mainNav">
+ 				<h1><a ng-click="mainNav.clearSelected()" href="#/">Learning <br /> Angular</a></h1>
  				<h2>My attempt at exploring AngularJS</h2>
  			</header>
 	 		<menu></menu>
+		</div>
+		<div>
+			<h2>This is a work in progress...</h2> 
+			 <p>Currently it acts as a repository for me to show examples of random JavaScript apps/components and my <a href="#/portfolio">portfolio</a>. This is all built using AngularJS, jQuery, and HTML/CSS.</p> 
 		</div>
 		<div ng-view>
 		</div>
@@ -27,5 +27,19 @@
 			<foot></foot>
 		</footer>
  	</div>
+
+ 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.min.js"></script>
+    <script type="text/javascript" src="../scripts/app.js"></script>
+	<script type="text/javascript" src="../scripts/directives/menu.js"></script>
+	<script type="text/javascript" src="../scripts/directives/foot.js"></script>
+	<script type="text/javascript" src="../scripts/directives/palindrome.js"></script>
+ 	<script type="text/javascript" src="../scripts/controllers/menuCtrl.js"></script>
+ 	<script type="text/javascript" src="../scripts/controllers/footCtrl.js"></script>
+ 	<script type="text/javascript" src="../scripts/controllers/portfolioCtrl.js"></script>
+
  </body>
 </html>

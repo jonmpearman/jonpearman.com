@@ -43,7 +43,7 @@ q:before, q:after {
 	content: none;
 }
 
-a {
+a:focus, a:hover {
 	text-decoration: none;
 }
 
@@ -66,6 +66,20 @@ table {
 }
 
 /* Custom Styles */
+html {
+	font-family: 'PT Serif', serif;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 10px;
+}
+
+p {
+	padding: 10px;
+}
+
 body {
 	font-size: 100%;
 	background: #ffffff;
@@ -122,8 +136,10 @@ header {
 
 menu {
 	cursor: pointer;
-	display: block;
+	display: inline-block;
 	width: 100%;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 	background: #9C9FA1;
 	background-repeat: no-repeat;
 }
@@ -141,17 +157,37 @@ menu {
 }
 
 .menu {
-	margin: 10px, 0, 20px, 0;
-	padding: 10px;
+	width: 600px;
+	margin: 0 auto;
+	padding: 15px;
 }
 
-.menu .links {
-	padding: 10px;
+.menu .active {
+	background-color: #ffffff;
+	color: #9C9FA1;
+	font-weight: bolder;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.menu .link.active:hover {
+	color: #9C9FA1;
+}
+
+.menu-wrapper li {
+	display: inline-block;
+}
+
+.menu-wrapper {
+	display: inline-block;
+}
+
+.menu nav {
 	-webkit-transition:all linear 0.1s;
 	transition: all linear 0.1s;
 }
 
-.menu .links.ng-hide {
+.menu nav.ng-hide {
 	opacity: 0;
 	transform: scale(0.8)
 }
@@ -159,10 +195,74 @@ menu {
 .link {
 	color: rgba(0,0,0,0.6);
 	margin: 5px;
+	padding: 20px;
 }
 
 .link:hover {
 	color: #ffffff;
+}
+
+/* Palindrome Form */
+.btn {
+	display: inline-block;
+	border: 1px solid #9C9FA1;
+	border-radius: 5px;
+	padding: 3px 5px;
+}
+
+.btn-check {
+
+}
+
+/* Portfolio */
+.portfolio {
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.portfolio-entry {
+	display: block;
+	padding: 10px;
+	border-bottom: 2px dotted black;
+}
+
+.portfolio-entry:last-child {
+	border-bottom: none;
+}
+
+.summary {
+	display: inline-block;
+	padding: 10px;
+	width: 45%;
+}
+
+.img-wrapper {
+	display: inline-block;
+	margin: 5px;
+	width: 50%;
+}
+
+.img-wrapper img {
+	width: 100%;
+}
+
+.goto {
+	position: relative;
+}
+
+.goto span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	z-index: 1;
+}
+
+.external-links {
+	margin: 10px;
+	text-align: center;
 }
 
 /* Main-Content */
@@ -192,12 +292,12 @@ footer {
 	background-repeat: no-repeat;
 }
 
-foot {
-	margin: 20px;
+.foot-wrapper li {
+	margin: 5px;
 }
 
-footer .links {
-	margin-top: 180px;
+.foot-wrapper .link {
+	padding: 0;
 }
 
 .foot-content {
