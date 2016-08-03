@@ -1,2 +1,2 @@
-# angular-UI
-This some examples and me to explore creating a UI with angular
+# jonpearman.com - My personal site/portfolio built with Angular and PHP
+A work in progress website/portfolio built using AngularJS and PHP.
