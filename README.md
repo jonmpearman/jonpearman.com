@@ -1,2 +1,2 @@
-# jonpearman.com - My personal site/portfolio built with Angular and PHP
+# jonpearman.com
 A work in progress website/portfolio built using AngularJS and PHP.
