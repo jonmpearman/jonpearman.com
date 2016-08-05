@@ -1,12 +1,20 @@
-<div class="main-content group">
+<div class="main-content group" ng-controller="HomeCtrl as home">
 	<div class="content left">
+		<div class="bio-picture left">
+			<img src="home.bio.imgSrc" />
+		</div>
+		<div class="bio-about right">
+			{{ home.bio.aboutWeb }}
+		</div>
+		<div class="clearfix"></div>
 	</div>
 	<div class="content colored">
-		<div class="right clearfix">
-			This is content that is colored.
+		<div class="right">
+			{{ home.bio.aboutSoccer }}
 		</div>
+		<div class="clearfix"></div>
 	</div>
 	<div class="content left">
-		This is content that is not colored.
+		{{ home.bio.aboutFood }}
 	</div>
 </div>
