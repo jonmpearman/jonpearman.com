@@ -1,13 +1,13 @@
-<div class="external-links">
-	<div>View more of my work here: <a href="https://github.com/jonmpearman">Github</a></div>
-	<div>View my LinkedIn profile here: <a href="https://www.linkedin.com/in/jon-pearman-5a13bba6">LinkedIn</a></div>
-</div>
-<div class="container main-content colored portfolio" ng-controller="portfolioCtrl as port">
-	<div ng-repeat="item in port.portfolio" class="portfolio-entry">
-		<div class="img-wrapper">
-			<img src="{{item.imgSrc}}"/>
+<div class="container main-content portfolio colored" ng-controller="portfolioCtrl as port">
+	<div class="external-links">
+		<div>View more of my work here: <a target="_blank" href="https://github.com/jonmpearman">Github</a></div>
+		<div>View my LinkedIn profile here: <a target="_blank" href="https://www.linkedin.com/in/jonpearman">LinkedIn</a></div>
+	</div>
+	<div ng-repeat="item in port.portfolio" class="portfolio-entry row">
+		<div class="img-wrapper col-md-6">
+			<img ng-src="{{item.imgSrc}}"/>
 		</div>
-		<div class="summary right clearfix">
+		<div class="summary right clearfix col-md-6">
 			<p>{{item.summary}}</p>
 			<div class="btn goto">
 				Go To

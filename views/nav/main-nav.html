@@ -1,9 +1,18 @@
- <nav  ng-controller="menuCtrl as mainNav" class="menu">
- 	<ul class="menu-wrapper">
-		<li ng-repeat="menu in mainNav.menuNames">
-			<a class="link" ng-class="{active: mainNav.isSelected(menu.name)}" ng-click="mainNav.isActive(menu.name)" href="#/{{menu.name | lowercase}}">
-				{{menu.name}}
-			</a>
-		</li>
-	</ul>
-</nav>
+<div class="intro" ng-controller="menuCtrl as mainNav">
+	<div class="header">
+		<h1><a ng-click="mainNav.clearSelected()" href="#/">Jon&nbsp;Pearman</a></h1>
+		<h2>Aspiring Web Developer, Food Enthusiast, and Life Long Soccer Player</h2>
+	</div>
+	 <nav class="menu">
+	 	<ul class="menu-wrapper">
+			<li ng-repeat="menu in mainNav.menuNames">
+				<a class="link" ng-class="{active: mainNav.isActive('/{{menu.name | lowercase}}')}" href="#/{{menu.name | lowercase}}">
+					{{menu.name}}
+				</a>
+			</li>
+		</ul>
+	</nav>
+<!-- 	<div class="login">
+		<div class="login-btn btn">Sign in &frasl; Register</div>
+	</div> -->
+</div>

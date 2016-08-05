@@ -1,21 +1,16 @@
-app.controller('menuCtrl', function() {
+app.controller('menuCtrl', ['$location', function($location) {
 	var self = this;
-	self.selected = '';
 
 	self.menuNames = [
 		{name: 'Home'},
+		{name: 'Portfolio'},
 		{name: 'Directives'},
-		{name: 'Controllers'},
 		{name: 'Services'},
-		{name: 'Portfolio'}
+		{name: 'Controllers'}
 	];
 
-	self.isActive = function(name) {
-		self.selected = name;
-	}
-
-	self.isSelected = function(name) {
-		return self.selected === name;
+	self.isActive = function(viewLocation) {
+		return viewLocation === $location.path();
 	}
 
 	self.clearSelected = function() {
@@ -26,4 +21,4 @@ app.controller('menuCtrl', function() {
 			}
 		});
 	}
-});
+}]);

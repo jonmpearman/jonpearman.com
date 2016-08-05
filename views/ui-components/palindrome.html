@@ -1,4 +1,5 @@
-<div class="palindrome">
-	<input type="text" ng-model="word" placeholder="Enter word here..." />
-	<div class="btn btn-check">Check</div>
+<div class="palindrome" ng-controller="palindromeCtrl as palinCtrl">
+	<label>Enter a word and check if it is a palindrome!</label>
+	<input class="word" type="text" ng-model="word" placeholder="Enter word here..." />
+	<div class="btn btn-check" ng-click="palinCtrl.checkWord(word)">Check</div>
 </div>
