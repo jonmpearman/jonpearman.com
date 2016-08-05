@@ -1,12 +1,18 @@
-<div class="main-content group">
+<div class="main-content group" ng-controller="homeCtrl as home">
 	<div class="content left">
-	
+		<div class="bio-picture left">
+			<img src="{{home.bio.imgSrc}}" />
+		</div>
+		<div class="bio-about right">
+			<p class="white">{{ home.bio.aboutWeb }}</p>
+		</div>
 	</div>
 	<div class="content colored">
-		<div class="right clearfix">
-			This is content that is colored and floated right.
+		<div class="right">
+			<p>{{ home.bio.aboutSoccer }}</p>
 		</div>
 	</div>
 	<div class="content left">
+		<p class="white">{{ home.bio.aboutFood }}</p>
 	</div>
 </div>

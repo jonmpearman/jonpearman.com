@@ -7,5 +7,5 @@ app.config(['$routeProvider', function($routeProvider) {
 	.when('/controllers', {templateUrl: '../views/partials/controllers.html'})
 	.when('/services', {templateUrl: '../views/partials/services.html'})
 	.when('/portfolio', {templateUrl: '../views/partials/portfolio.html'})
-	.otherwise({redirectTo: '/portfolio'})
+	.otherwise({redirectTo: '/home', templateUrl: '../views/partials/home-partial.html'})
 }]);
