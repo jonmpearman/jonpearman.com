@@ -1,0 +1,43 @@
+{
+  "name": "jonpearman.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": "https://github.com/jonmpearman/jonpearman.com",
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "normalize.css": "^8.0.1",
+    "path": "^0.12.7",
+    "ramda": "^0.26.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-html-parser": "^2.0.2",
+    "react-promise": "^2.0.3",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server -d --hot --inline --config webpack.config.js",
+    "start": "node ./server/server.js",
+    "build": "webpack -p",
+    "react-dev": "webpack -d --watch",
+    "server-dev": "nodemon server/server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

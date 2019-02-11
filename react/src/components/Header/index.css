@@ -1,0 +1,10 @@
+.headerContainer {
+    grid-area: header;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    background: #a8c0ff no-repeat center center fixed;
+    background: -webkit-linear-gradient(-45deg, #A8C0FF 0%, #8E9BE5 25%,#7476CB 50%, #5950B0 75%,#3F2B96 100%) no-repeat right bottom fixed;
+    background: linear-gradient(-45deg, #3F2B96 0%, #5950B0 25%,#7476CB 50%, #8E9BE5 75%,#A8C0FF 100%) no-repeat right bottom fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
