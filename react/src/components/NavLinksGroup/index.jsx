@@ -9,7 +9,8 @@ class NavLinksGroup extends Component {
     }
 
     static get navLinkItems() {
-        return ['home', 'résumé', 'about me', 'contact me']
+        // return ['home', 'résumé', 'about me', 'contact me'];
+        return ['home', 'contact me'];
     }
 
     render() {

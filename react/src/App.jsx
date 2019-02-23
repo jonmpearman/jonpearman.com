@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import HelloBtn from './components/HelloBtn';
-import Header from './components/Header/index';
+import HeaderContainer from './containers/Header/index';
 import AppConnector from './store/connect.jsx';
 import './index.css';
 
@@ -12,9 +11,10 @@ class App extends Component {
     render(){
         return (
             <div className={'pageContainer'}>
-                <Header />
+                <HeaderContainer />
                 <div className={'appContainer'}>
-                    <HelloBtn {...this.props} />
+                    My name is Jon Pearman and I am a frontend engineer.
+                    <p>More coming soon!</p>
                 </div>
             </div>
         );
