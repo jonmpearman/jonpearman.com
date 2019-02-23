@@ -92,4 +92,7 @@ typings/
 # pem
 *.pem
 
+# zip
+*.zip
+
 # End of https://www.gitignore.io/api/node
