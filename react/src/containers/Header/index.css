@@ -1,6 +1,5 @@
 .headerContainer {
     grid-area: header;
-    position: relative;
     overflow: hidden;
     border-radius: 0 0 10px 10px;
     background: #a8c0ff no-repeat center center fixed;
@@ -15,20 +14,18 @@
     font-weight: 900;
     position: absolute;
     margin: 15px;
+    margin-right: 350px;
 }
 
 .background-img-container {
-    position: relative;
-    padding-top: 300px; 
+    height: 100%; 
 }
 
 .header-background-img {
     background-image: url('/assets/imgs/Seattle-skyline.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
